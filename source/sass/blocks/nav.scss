@@ -1,0 +1,45 @@
+.nav {
+  display: flex;
+}
+
+.nav__list {
+  @include clearlist;
+  margin-right: 67px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav__item {
+  margin-bottom: 30px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .nav__list {
+    margin-right: 87px;
+
+    &:last-child {
+      margin-right: 87px;
+    }
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .nav {
+    display: block;
+  }
+
+  .nav__list {
+    margin-bottom: 50px;
+  }
+}
