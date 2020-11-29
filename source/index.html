@@ -7,31 +7,31 @@
   <meta name="description" content="website about jewelry">
   <meta name="keywords" content="jewelry, jewel, valuables, treasure, gem">
   <title>Jewellery</title>
-  <link rel="preload" href="fonts/Poppins-Medium.woff" as="font">
-  <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font">
-  <link rel="preload" href="fonts/CormorantGaramond-Bold.woff" as="font">
-  <link rel="preload" href="fonts/CormorantGaramond-Bold.woff2" as="font">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="./fonts/Poppins-Medium.woff" as="font">
+  <link rel="preload" href="./fonts/Poppins-Medium.woff2" as="font">
+  <link rel="preload" href="./fonts/CormorantGaramond-Bold.woff" as="font">
+  <link rel="preload" href="./fonts/CormorantGaramond-Bold.woff2" as="font">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
 <header class="header">
   <div class="header__menu container">
     <button class="header__burger header__burger--nojs" type="button">
       <svg class="svg" width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <use xlink:href="img/sprite.svg#icon-burger"></use>
+        <use xlink:href="./img/sprite.svg#icon-burger"></use>
       </svg>
     </button>
     <form class="header__form">
       <input type="text" placeholder="Type here for search" aria-label="Type here gor search">
       <button type="submit">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/sprite.svg#icon-search"></use>
+          <use xlink:href="./img/sprite.svg#icon-search"></use>
         </svg>
       </button>
     </form>
     <a class="header__logo header__logo--nojs">
       <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <use xlink:href="img/sprite.svg#icon-logo"></use>
+        <use xlink:href="./img/sprite.svg#icon-logo"></use>
       </svg>
     </a>
     <div class="header__user">
@@ -39,7 +39,7 @@
       <a href="#" class="header__cart">
         <span>Cart <span>0</span></span>
         <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/sprite.svg#icon-cart"></use>
+          <use xlink:href="./img/sprite.svg#icon-cart"></use>
         </svg>
       </a>
     </div>
@@ -80,6 +80,87 @@
     <strong>Perfection</strong>
     <p>made to be yours</p>
   </section>
+  <section class="newIn container">
+    <h2>New In</h2>
+    <a href="catlog.html">Shop Now</a>
+    <div class="newIn__slider slider">
+      <div class="slider__buttons">
+        <button class="slider__btn" type="button" id="btn-prev">
+          <svg width="30" height="11" viewBox="0 0 30 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button class="slider__btn" type="button" id="btn-next">
+          <svg width="30" height="11" viewBox="0 0 30 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="slider__track">
+        <div class="slider__item">
+          <img src="./img/Index/purple-gemstone-necklace-desktop.jpg" width="270" height="284" alt="Necklace with amethyst">
+          <h3>Necklace with amethyst</h3>
+          <span>$ 145</span>
+        </div>
+        <div class="slider__item">
+          <img src="./img/Index/layered-choker-necklace-desktop.jpg" width="270" height="284" alt="Layered сhoker">
+          <h3>Layered сhoker</h3>
+          <span>$ 115</span>
+        </div>
+        <div class="slider__item">
+          <img src="./img/Index/dainty-gold-necklace-desktop.jpg" width="270" height="284" alt="Gold chain">
+          <h3>Gold chain</h3>
+          <span>$ 215</span>
+        </div>
+        <div class="slider__item">
+          <img src="./img/Index/galaxy-earrings-desktop-1.jpg" width="270" height="284" alt="Galaxy earrings">
+          <h3>Galaxy earrings</h3>
+          <span>$ 95</span>
+        </div>
+      </div>
+      <div class="slider__pages">
+        <span class="slider__page slider__page--active">1</span>
+        <span class="slider__page">2</span>
+        <span class="slider__page">3</span>
+        <span class="slider__page slider__page--off">4</span>
+        <span class="slider__page slider__page--off">5</span>
+        <span class="slider__page slider__page--off">6</span>
+      </div>
+    </div>
+  </section>
+  <section class="blog container">
+    <h2>Blog</h2>
+    <a href="blog.html">Read All</a>
+    <div class="blog__list">
+      <div class="blog__wrapper">
+        <article class="blog__item">
+          <img src="./img/Index/jess-harper-sunday-b5NwJj4bVcg-unsplash%20(1)-blog-care-desktop.jpg" width="285" height="300" alt="Jewellery">
+          <div class="blog__title">
+            <time datetime="2019-09-30">September 30, 2019</time>
+            <h3>How to care for your&nbsp;jewellery</h3>
+            <a href="#">Read Article</a>
+          </div>
+        </article>
+        <article class="blog__item">
+          <div class="blog__title blog__title--order">
+            <time datetime="2019-09-23">September 23, 2019</time>
+            <h3>Power of crystals</h3>
+            <a href="#">Read Article</a>
+          </div>
+          <img src="./img/Index/alex-holyoake-Cg0dPdmy5dE-unsplash-blog-power-desktop.jpg" width="285" height="300" alt="Jewellery">
+        </article>
+      </div>
+      <article class="blog__item blog__item--big">
+        <img src="./img/Index/alve-odonnell-RP4_f4zu_8A-unsplash-blog-trends-desktop.jpg" width="570" height="630" alt="Woman with jewellery">
+        <div class="blog__title blog__title--absolute">
+          <time datetime="2019-09-16">September 16, 2019</time>
+          <h3>AW 19 trends</h3>
+          <a href="#">Read Article</a>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="faq container"></section>
 </main>
 <!-- FOOTER -->
 <footer class="footer">
@@ -92,7 +173,7 @@
         <button type="submit">
           <span>Sign Up</span>
           <svg width="30" height="11" viewBox="0 0 30 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#icon-longArrow-right"></use>
+            <use xlink:href="./img/sprite.svg#icon-longArrow-right"></use>
           </svg>
         </button>
       </form>
@@ -133,7 +214,7 @@
         <li class="socials__item">
           <a href="#">
             <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              <use xlink:href="./img/sprite.svg#icon-facebook"></use>
             </svg>
             <span>Facebook</span>
           </a>
@@ -141,7 +222,7 @@
         <li class="socials__item">
           <a href="#">
             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              <use xlink:href="./img/sprite.svg#icon-instagram"></use>
             </svg>
             <span>Instagram</span>
           </a>
@@ -149,7 +230,7 @@
         <li class="socials__item">
           <a href="#">
             <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+              <use xlink:href="./img/sprite.svg#icon-pinterest"></use>
             </svg>
             <span>Pinterest</span>
           </a>
@@ -157,7 +238,7 @@
         <li class="socials__item">
           <a href="#">
             <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              <use xlink:href="./img/sprite.svg#icon-twitter"></use>
             </svg>
             <span>Twitter</span>
           </a>

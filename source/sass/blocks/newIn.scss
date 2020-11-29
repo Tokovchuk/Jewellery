@@ -1,0 +1,27 @@
+.newIn {
+  margin-bottom: 130px;
+  text-align: center;
+}
+
+.newIn h2 {
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 44px;
+}
+
+.newIn a {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  border-bottom: 1px solid $pink;
+}
+
+.newIn__slider {
+  margin-top: -50px;
+}

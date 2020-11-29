@@ -1,0 +1,154 @@
+.blog {
+  margin-bottom: 130px;
+  text-align: center;
+}
+
+.blog h2 {
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 44px;
+}
+
+.blog a {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  border-bottom: 1px solid $pink;
+}
+
+.blog__list {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+}
+
+.blog__wrapper {
+  margin-right: 30px;
+  width: 50%;
+  max-width: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog__item {
+  display: flex;
+  position: relative;
+  height: 50%;
+
+  &:first-child {
+    margin-bottom: 30px;
+  }
+}
+
+.blog__item img {
+  width: 50%;
+  height: auto;
+}
+
+.blog__item--big img {
+  width: 100%;
+  height: auto;
+}
+
+.blog__title {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 50%;
+  background-color: $bg-article;
+
+  &--absolute {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.blog__title time {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: $grey;
+}
+
+.blog__title h3 {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 34px;
+  color: #000000;
+}
+
+@media (max-width: $tablet-max) {
+  .blog__list {
+    display: block;
+  }
+
+  .blog__wrapper {
+    margin: 0;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .blog__item {
+    margin-bottom: 50px;
+    width: 100%;
+    height: 100%;
+
+    &:first-child {
+      margin-bottom: 50px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .blog__item img {
+    width: 50%;
+  }
+
+  .blog__title {
+    &--absolute {
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .blog__item {
+    flex-direction: column;
+  }
+
+  .blog__item img {
+    width: 100%;
+  }
+
+  .blog__title {
+    width: 100%;
+  }
+
+  .blog__title--absolute {
+    position: relative;
+  }
+
+  .blog__title--order {
+    order: 2;
+  }
+}
