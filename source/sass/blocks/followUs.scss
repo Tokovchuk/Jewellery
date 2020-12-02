@@ -1,0 +1,128 @@
+.followUs {
+  margin-bottom: 130px;
+  text-align: center;
+}
+
+.followUs h2 {
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 44px;
+}
+
+.followUs a {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  border-bottom: 1px solid $pink;
+}
+
+.followUs__images {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.followUs__soloImg {
+  width: 35%;
+}
+
+.followUs__soloImg img {
+  height: 100%;
+}
+
+.followUs__wrapper {
+  margin-right: 2.56%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.followUs__wrapper img:first-child {
+  margin-bottom: 15.5%;
+}
+
+.followUS__container {
+  margin-left: 2.56%;
+  width: 42%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.followUS__container img {
+  max-width: 45.42%;
+
+  &:first-child,
+  &:last-child {
+    max-width: 48.33%;
+  }
+
+  &:nth-child(2n-1) {
+    margin-right: 6.25%;
+  }
+
+  &:nth-child(n+3) {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .followUs {
+    margin-bottom: 70px;
+  }
+
+  .followUs__images {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .followUs__wrapper {
+    margin-right: 5.17%;
+    margin-bottom: 15px;
+    width: 44.83%;
+  }
+
+  .followUs__soloImg {
+    margin-bottom: 8px;
+    padding-bottom: 5%;
+    width: 50%;
+  }
+
+  .followUs__soloImg img {
+    object-fit: cover;
+    min-height: 226px;
+  }
+
+  .followUS__container {
+    margin: 0;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .followUS__container img {
+    &:first-child {
+      margin: 0;
+      order: 2;
+      min-width: 50%;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 5.17%;
+      width: 44.83%;
+    }
+
+    &:nth-child(2n) {
+      display: none;
+    }
+  }
+}

@@ -58,3 +58,89 @@ burger.addEventListener('click', (evt) => {
   burger.classList.toggle('header__burger--close');
   cart.classList.toggle('header__cart--close');
 });
+
+const triggers = document.querySelectorAll('.accordion__item');
+
+triggers.forEach((item) => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('accordion__item--active');
+  });
+});
+
+// Slider INDEX
+
+const next = document.querySelector('#btn-next');
+const prev = document.querySelector('#btn-prev');
+const track = document.querySelector('.slider__track');
+const slides = document.querySelectorAll('.slider__item');
+const slider = document.querySelector('.slider');
+const pageNumbers = document.querySelectorAll('.slider__page');
+
+let index = 0;
+let slidesToShow = 4;
+let maxIndex = (slides.length / slidesToShow) - 1;
+
+const setPosition = function () {
+  if (index === 0) {
+    prev.setAttribute('disabled', 'true');
+  } else {
+    prev.removeAttribute('disabled');
+  }
+
+  if (index === maxIndex) {
+    next.setAttribute('disabled', 'true');
+  } else {
+    next.removeAttribute('disabled');
+  }
+
+  let moveSlider = slider.clientWidth * index;
+  track.style.transform = `translateX(-${moveSlider}px)`;
+  track.style.transition = '0.2s';
+};
+
+const activeNumber = () => {
+  pageNumbers.forEach((number) => {
+    number.classList.remove('slider__page--active');
+  });
+  pageNumbers[index].classList.add('slider__page--active');
+};
+pageNumbers.forEach((item, indexDot) => {
+  item.addEventListener('click', () => {
+    index = indexDot;
+    setPosition(index);
+    activeNumber(index);
+  });
+});
+pageNumbers[0].click();
+
+setPosition();
+
+next.addEventListener('click', () => {
+  index++;
+  setPosition();
+  activeNumber();
+});
+
+prev.addEventListener('click', () => {
+  index--;
+  setPosition();
+  activeNumber();
+});
+
+window.addEventListener('resize', () => {
+  if (window.matchMedia('(max-width: 1023px)').matches) {
+    slidesToShow = 2;
+    setPosition();
+    pageNumbers.forEach((item) => {
+      item.classList.remove('slider__page--off');
+    });
+  } else {
+    slidesToShow = 4;
+    setPosition();
+    pageNumbers.forEach((item, indexPage) => {
+      if (indexPage >= 3) {
+        item.classList.add('slider__page--off');
+      }
+    });
+  }
+});
