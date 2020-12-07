@@ -1,5 +1,6 @@
 .blog {
-  margin-bottom: 130px;
+  padding-top: 70px;
+  padding-bottom: 60px;
   text-align: center;
 }
 
@@ -14,6 +15,9 @@
 }
 
 .blog a {
+  margin-bottom: 60px;
+  display: inline-block;
+  vertical-align: middle;
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -23,9 +27,11 @@
 }
 
 .blog__list {
-  margin-top: 60px;
   width: 100%;
   display: flex;
+  flex-direction: row;
+
+  outline: 1px solid blue;
 }
 
 .blog__wrapper {
@@ -35,26 +41,35 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  outline: 1px solid green;
 }
 
 .blog__item {
-  display: flex;
-  position: relative;
   height: 50%;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+
+  &--left-img {
+    background-image: url("../../img/Index/blog-1.jpg");
+  }
+
+  &--right-img {
+    background-position: 100% 0;
+    background-image: url("../../img/Index/blog-2.jpg");
+  }
+
+  &--big {
+    width: 50%;
+    height: 100%;
+    background-size: 100%;
+    background-image: url("../../img/Index/blog-3.jpg");
+    outline: 1px solid red;
+  }
 
   &:first-child {
     margin-bottom: 30px;
   }
-}
-
-.blog__item img {
-  width: 50%;
-  height: auto;
-}
-
-.blog__item--big img {
-  width: 100%;
-  height: auto;
 }
 
 .blog__title {
@@ -65,12 +80,15 @@
   width: 50%;
   background-color: $bg-article;
 
-  &--absolute {
+  &--ml {
+    margin-left: 50%;
+  }
+
+  &--corner {
+    margin-left: 50%;
+    margin-top: 50%;
     width: 50%;
     height: 50%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
   }
 }
 
@@ -119,16 +137,6 @@
       margin-bottom: 0;
     }
   }
-
-  .blog__item img {
-    width: 50%;
-  }
-
-  .blog__title {
-    &--absolute {
-      height: 100%;
-    }
-  }
 }
 
 @media (max-width: $mobile-max) {
@@ -136,19 +144,7 @@
     flex-direction: column;
   }
 
-  .blog__item img {
-    width: 100%;
-  }
-
   .blog__title {
     width: 100%;
-  }
-
-  .blog__title--absolute {
-    position: relative;
-  }
-
-  .blog__title--order {
-    order: 2;
   }
 }

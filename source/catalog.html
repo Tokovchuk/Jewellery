@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="website about jewelry">
+  <meta name="keywords" content="jewelry, jewel, valuables, treasure, gem">
+  <title>Jewellery</title>
+  <link rel="preload" href="./fonts/Poppins-Medium.woff" as="font">
+  <link rel="preload" href="./fonts/Poppins-Medium.woff2" as="font">
+  <link rel="preload" href="./fonts/CormorantGaramond-Bold.woff" as="font">
+  <link rel="preload" href="./fonts/CormorantGaramond-Bold.woff2" as="font">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+<header class="header">
+  <div class="header__menu container">
+    <button class="header__burger header__burger--nojs" type="button">
+      <svg class="svg" width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="./img/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <form class="header__form">
+      <input type="text" placeholder="Type here for search" aria-label="Type here gor search">
+      <button type="submit">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./img/sprite.svg#icon-search"></use>
+        </svg>
+      </button>
+    </form>
+    <a href="./index.html" class="header__logo header__logo--nojs">
+      <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="./img/sprite.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <div class="header__user">
+      <a href="#" class="header__login">Login</a>
+      <a href="#" class="header__cart">
+        <span>Cart <span>0</span></span>
+        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./img/sprite.svg#icon-cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <nav class="header__nav header__nav--nojs main-nav">
+    <ul class="main-nav__list">
+      <li class="main-nav__item">
+        <a href="#">What’s new</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#">Chokers</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#">Necklaces</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#">Rings</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#">Earrings</a>
+      </li>
+    </ul>
+    <ul class="main-nav__list main-nav__list--addon">
+      <li class="main-nav__item main-nav__item--addon">
+        <a href="#">About CH</a>
+      </li>
+      <li class="main-nav__item main-nav__item--addon">
+        <a href="#">Stores & Hours</a>
+      </li>
+      <li class="main-nav__item main-nav__item--addon">
+        <a href="#">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="catalog-promo">
+    <h2>All jewellery</h2>
+    <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
+  </section>
+  <section class="catalog">
+    <div class="catalog__wrapper container">
+      <aside class="catalog__filter filter">
+        <form class="filter__form">
+          <fieldset>
+            <h3>
+              <span>Product</span>
+              <button type="button" class="filter__tick">
+                <svg width="17" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#icon-tick-down"></use>
+                </svg>
+              </button>
+            </h3>
+            <div class="filter__product">
+              <label>
+                <input type="checkbox">
+                <span>Necklaces</span>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span>Chokers</span>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span>Rings</span>
+              </label>
+              <label>
+                <input type="checkbox">
+                <span>Earrings</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <h3>
+              <span>Material</span>
+              <button type="button" class="filter__tick">
+                <svg width="17" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#icon-tick-down"></use>
+                </svg>
+              </button>
+            </h3>
+          </fieldset>
+          <fieldset>
+            <h3>
+              <span>Collection</span>
+              <button type="button" class="filter__tick">
+                <svg width="17" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#icon-tick-down"></use>
+                </svg>
+              </button>
+            </h3>
+          </fieldset>
+          <fieldset>
+            <h3>
+              <span>Price</span>
+              <button type="button" class="filter__tick">
+                <svg width="17" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#icon-tick-down"></use>
+                </svg>
+              </button>
+            </h3>
+          </fieldset>
+        </form>
+      </aside>
+      <div class="catalog__cards cards">
+        <ul class="cards__list">
+          <li class="cards__item">
+            <img src="./img/Catalog/double-pearl-earrings%20(1).jpg" width="270" height="272"
+                 alt="double-pearl-earrings">
+            <h3>Double pearl earrings</h3>
+            <span>$115</span>
+          </li>
+          <li class="cards__item">
+            <img src="./img/Catalog/black-choker-gold-bead.jpg" width="270" height="272" alt="double-pearl-earrings">
+            <h3>Choker with gold bead</h3>
+            <span>$55</span>
+          </li>
+          <li class="cards__item">
+            <img src="./img/Catalog/gold-layered-necklace.jpg" width="270" height="272" alt="double-pearl-earrings">
+            <h3>Gold layered necklace</h3>
+            <span>$155</span>
+          </li>
+          <li class="cards__item">
+            <img src="./img/Catalog/blue-gemstone-pendant.jpg" width="270" height="272" alt="double-pearl-earrings">
+            <h3>Blue gemstone pendant</h3>
+            <span>$105</span>
+          </li>
+          <li class="cards__item">
+            <img src="./img/Catalog/boho-earrings.jpg" width="270" height="272" alt="double-pearl-earrings">
+            <h3>Boho earrings</h3>
+            <span>$75</span>
+          </li>
+          <li class="cards__item">
+            <img src="./img/Catalog/bird-necklace.jpg" width="270" height="272" alt="double-pearl-earrings">
+            <h3>Gold bird necklace</h3>
+            <span>$135</span>
+          </li>
+          <li class="cards__item">
+            <img src="./img/Catalog/black-leather-choker-necklace%20(1).jpg" width="270" height="272"
+                 alt="double-pearl-earrings">
+            <h3>Black leather choker</h3>
+            <span>$85</span>
+          </li>
+          <li class="cards__item">
+            <img src="./img/Catalog/purple-gemstone-necklace.jpg" width="270" height="272" alt="double-pearl-earrings">
+            <h3>Necklace with amethyst</h3>
+            <span>$145</span>
+          </li>
+          <li class="cards__item">
+            <img src="./img/Catalog/elephant-earrings.jpg" width="270" height="272" alt="double-pearl-earrings">
+            <h3>Elephant earrings</h3>
+            <span>$95</span>
+          </li>
+          <li class="cards__item">
+            <img src="./img/Catalog/threader-necklace-closeup.jpg" width="270" height="272" alt="double-pearl-earrings">
+            <h3>Threader necklace</h3>
+            <span>$115</span>
+          </li>
+          <li class="cards__item">
+            <img src="./img/Catalog/origami-crane-necklace.jpg" width="270" height="272" alt="double-pearl-earrings">
+            <h3>Origami crane necklace</h3>
+            <span>$105</span>
+          </li>
+          <li class="cards__item">
+            <img src="./img/Catalog/marble-earrings%20(1).jpg" width="270" height="272" alt="double-pearl-earrings">
+            <h3>Marble earrings</h3>
+            <span>$95</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="cards__controls">
+      <div class="cards__wrapper container">
+        <a href="#">Previous</a>
+        <div class="cards__pages">
+          <span class="cards__page cards__page--active">1</span>
+          <span class="cards__page">2</span>
+          <span class="cards__page">3</span>
+          <span class="cards__page">4</span>
+          <span class="cards__page">5</span>
+        </div>
+        <a href="#">Next</a>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__wrapper container">
+    <div class="footer__subscribe">
+      <h2>The good stuff in&nbsp;your inbox </h2>
+      <p>News and updates from CH. No&nbsp;spam, we promise.</p>
+      <form class="footer__form">
+        <input type="email" maxlength="35" aria-label="Insert your e-mail" placeholder="Your E-mail">
+        <button type="submit">
+          <span>Sign Up</span>
+          <svg width="30" height="11" viewBox="0 0 30 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#icon-longArrow-right"></use>
+          </svg>
+        </button>
+      </form>
+
+    </div>
+    <div class="footer__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#">Ordering & Payment</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Terms & Conditions</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Returns & Exchanges</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Delivery</a>
+        </li>
+      </ul>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#">About CH</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Stores & Hours</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Jobs</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__socials socials">
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a href="#">
+            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#icon-facebook"></use>
+            </svg>
+            <span>Facebook</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#icon-instagram"></use>
+            </svg>
+            <span>Instagram</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#">
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#icon-pinterest"></use>
+            </svg>
+            <span>Pinterest</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#">
+            <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+            </svg>
+            <span>Twitter</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

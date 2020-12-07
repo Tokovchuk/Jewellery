@@ -1,4 +1,4 @@
-.socials__list {
+.socials {
   @include clearlist;
 }
 
@@ -12,6 +12,7 @@
 }
 
 .socials__item svg {
+  margin-right: 15px;
   width: 16px;
   height: 16px;
 }
@@ -22,7 +23,7 @@
 }
 
 @media (max-width: $mobile-max) {
-  .socials__list {
+  .socials {
     display: flex;
   }
 

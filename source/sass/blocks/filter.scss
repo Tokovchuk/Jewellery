@@ -1,0 +1,15 @@
+.filter__form fieldset {
+  border: 1px solid $pink;
+}
+
+.filter__form h3 {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__product {
+  display: flex;
+  flex-direction: column;
+}

@@ -24,6 +24,7 @@
 @media (max-width: $tablet-max) {
   .main-nav {
     background-color: $pink;
+    z-index: 10;
   }
 
   .main-nav__list {

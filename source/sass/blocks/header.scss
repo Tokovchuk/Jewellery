@@ -1,6 +1,12 @@
 .header {
-  padding-top: 40px;
   color: $black;
+  position: relative;
+}
+
+.header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header__logo svg {
@@ -18,7 +24,8 @@
 }
 
 .header__menu {
-  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 60px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -84,6 +91,7 @@
   .header {
     padding-top: 30px;
     background-color: $pink;
+    z-index: 10;
 
     &--close {
       background-color: #ffffff;
@@ -155,6 +163,7 @@
     border-radius: 21px;
     background-color: rgba(255, 255, 255, 0.15);
     line-height: 40px;
+    color: #ffffff;
   }
 
   .header__form button {
@@ -183,7 +192,7 @@
     padding-right: 45px;
     border: none;
     position: absolute;
-    top: 155px;
+    top: 143px;
     width: 100%;
 
     &--close {
@@ -200,5 +209,9 @@
   .header__logo svg {
     width: 52px;
     height: 52px;
+  }
+
+  .header__menu {
+    padding-bottom: 69px;
   }
 }

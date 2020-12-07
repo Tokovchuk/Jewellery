@@ -74,11 +74,54 @@ const prev = document.querySelector('#btn-prev');
 const track = document.querySelector('.slider__track');
 const slides = document.querySelectorAll('.slider__item');
 const slider = document.querySelector('.slider');
-const pageNumbers = document.querySelectorAll('.slider__page');
+
+const pageContainer = document.querySelector('.slider__pages');
 
 let index = 0;
 let slidesToShow = 4;
 let maxIndex = (slides.length / slidesToShow) - 1;
+
+const addPageNumber = () => {
+  const maxPages = slides.length / slidesToShow;
+  for (let i = 1; i <= maxPages; i++) {
+    const number = document.createElement('span');
+    number.className = 'slider__page';
+    number.textContent = `${i}`;
+    pageContainer.append(number);
+  }
+};
+
+const deletePageNumbers = () => {
+  while (pageContainer.firstChild) {
+    pageContainer.firstChild.remove();
+  }
+};
+
+addPageNumber();
+let pageNumbers = document.querySelectorAll('.slider__page');
+
+window.addEventListener('resize', function () {
+  if (window.matchMedia('(max-width: 1023px)').matches) {
+    deletePageNumbers();
+    slidesToShow = 2;
+    maxIndex = (slides.length / slidesToShow) - 1;
+    addPageNumber();
+    pageNumbers = document.querySelectorAll('.slider__page');
+    setSlider();
+  } else {
+    deletePageNumbers();
+    slidesToShow = 4;
+    maxIndex = (slides.length / slidesToShow) - 1;
+    addPageNumber();
+    pageNumbers = document.querySelectorAll('.slider__page');
+    if (index > 2) {
+      index = 2;
+      setSlider();
+    } else {
+      setSlider();
+    }
+  }
+});
 
 const setPosition = function () {
   if (index === 0) {
@@ -104,16 +147,26 @@ const activeNumber = () => {
   });
   pageNumbers[index].classList.add('slider__page--active');
 };
-pageNumbers.forEach((item, indexDot) => {
-  item.addEventListener('click', () => {
-    index = indexDot;
-    setPosition(index);
-    activeNumber(index);
+
+const activePages = () => {
+  pageNumbers.forEach((item, indexPage) => {
+    item.addEventListener('click', () => {
+      index = indexPage;
+      setPosition(index);
+      activeNumber(index);
+    });
   });
-});
-pageNumbers[0].click();
+  pageNumbers[0].click();
+};
+
+const setSlider = () => {
+  setPosition();
+  activeNumber();
+  activePages();
+};
 
 setPosition();
+activePages();
 
 next.addEventListener('click', () => {
   index++;
@@ -125,22 +178,4 @@ prev.addEventListener('click', () => {
   index--;
   setPosition();
   activeNumber();
-});
-
-window.addEventListener('resize', () => {
-  if (window.matchMedia('(max-width: 1023px)').matches) {
-    slidesToShow = 2;
-    setPosition();
-    pageNumbers.forEach((item) => {
-      item.classList.remove('slider__page--off');
-    });
-  } else {
-    slidesToShow = 4;
-    setPosition();
-    pageNumbers.forEach((item, indexPage) => {
-      if (indexPage >= 3) {
-        item.classList.add('slider__page--off');
-      }
-    });
-  }
 });

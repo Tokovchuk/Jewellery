@@ -1,31 +1,31 @@
-.main-promo {
-  padding-top: 195px;
-  padding-bottom: 195px;
+.catalog-promo {
+  margin-bottom: 130px;
+  padding-top: 102px;
+  padding-bottom: 102px;
   background-color: #776255;
-  background-image: url("../../img/Index/promo-bg.jpg");
+  background-image: url("../../img/Catalog/catalog-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   text-align: center;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.main-promo h2 {
+.catalog-promo h2 {
   font-family: "Cormorant Garamond", "Georgia", serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 45px;
-  line-height: 58px;
+  font-size: 34px;
+  line-height: 44px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
-.main-promo p {
+.catalog-promo p {
   margin: 0;
   font-family: "Cormorant Garamond", "Georgia", serif;
   font-style: italic;
   font-weight: normal;
-  font-size: 38px;
-  line-height: 49px;
+  font-size: 22px;
+  line-height: 29px;
   color: #ffffff;
 }

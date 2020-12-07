@@ -1,0 +1,73 @@
+.cards__list {
+  @include clearlist;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.cards__item {
+  margin-right: 3.5%;
+  margin-bottom: 44px;
+  width: 31%;
+  text-align: center;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.cards__item h3 {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.cards__item span {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.cards__controls {
+  padding-top: 40px;
+  border-top: 1px solid $light-grey;
+}
+
+.cards__wrapper {
+  padding-left: 330px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.cards__page {
+  margin-right: 15px;
+  color: $grey;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--active {
+    color: $black;
+  }
+}
+
+
+
+@media (max-width: $tablet-max) {
+
+}
+
+@media (max-width: $mobile-max) {
+
+}
