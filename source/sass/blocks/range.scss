@@ -1,0 +1,46 @@
+.range {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.range__all {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #f0eae4;
+}
+
+.range__select {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  width: 90px;
+  height: 1px;
+  background-color: $pink;
+}
+
+.range__circle {
+  margin-bottom: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $pink;
+  cursor: pointer;
+}
+
+.range__value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 3px;
+
+  &--min {
+    left: 37px;
+  }
+
+  &--max {
+    left: 127px;
+  }
+}

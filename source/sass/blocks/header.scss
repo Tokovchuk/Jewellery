@@ -102,6 +102,11 @@
     margin-left: 50%;
   }
 
+  .header__logo {
+    position: static;
+    transform: none;
+  }
+
   .header__logo svg {
     fill: #ffffff;
   }

@@ -59,6 +59,8 @@ burger.addEventListener('click', (evt) => {
   cart.classList.toggle('header__cart--close');
 });
 
+// FAQ Tabs
+
 const triggers = document.querySelectorAll('.accordion__item');
 
 triggers.forEach((item) => {
@@ -179,3 +181,4 @@ prev.addEventListener('click', () => {
   setPosition();
   activeNumber();
 });
+

@@ -1,15 +1,199 @@
+.filter {
+  width: 250px;
+  min-width: 250px;
+}
+
+.filter__form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
 .filter__form fieldset {
+  margin: 0;
   border: 1px solid $pink;
+  border-bottom: none;
+
+  &:last-of-type {
+    margin: 0 0 35px;
+    border-bottom: 1px solid $pink;
+  }
 }
 
 .filter__form h3 {
-  padding: 0;
+  margin-top: 30px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: $black;
 }
 
 .filter__product {
+  display: none;
+}
+
+.filter__product span {
+  padding-left: 30px;
+  position: relative;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: $black;
+
+  &::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px solid $pink;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.filter__product input:checked + span::before {
+  background-color: $pink;
+}
+
+.filter__active .filter__product {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+
+.filter__range {
+  display: none;
+}
+
+.filter__active .filter__range {
+  display: block;
+}
+
+.filter__active svg {
+  transform: scale(-1);
+}
+
+.filter__form button {
+  margin-bottom: 25px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-align: center;
+  border: 1px solid $pink;
+  background-color: #ffffff;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: $black;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $pink;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.filter__open {
+  display: none;
+}
+
+.filter__close {
+  display: none;
+}
+
+@media (max-width: $tablet-max) {
+  .filter {
+    margin-bottom: 50px;
+    width: 100%;
+
+
+    &--fixed {
+      padding-right: 16px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 99;
+      background-color: #ffffff;
+      overflow-y: auto;
+    }
+  }
+
+  .filter__form {
+    margin-top: 27px;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    width: 100%;
+    max-width: 423px;
+    box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
+    display: none;
+
+    &--active {
+      display: flex;
+    }
+  }
+
+  .filter__form fieldset {
+    padding-right: 40px;
+    border-right: none;
+    border-left: none;
+
+    &:first-of-type {
+      border-top: none;
+    }
+  }
+
+  .filter__form button {
+    margin-right: 40px;
+    margin-left: 21px
+  }
+
+  .filter__form .filter__close {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    background-color: #000000;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(56px, -50%);
+
+
+    &--active {
+      display: block;
+    }
+  }
+
+  .filter__close svg {
+    fill: #ffffff;
+  }
+
+  .filter__open {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    display: block;
+    width: 100%;
+    background-color: $pink;
+    color: #ffffff;
+    border: none;
+
+    &--hide {
+      display: none;
+    }
+  }
 }

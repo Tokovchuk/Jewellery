@@ -69,12 +69,9 @@
 }
 
 @media (max-width: $tablet-max) {
-  .footer {
+  .footer__wrapper {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-
-  .footer__wrapper {
     flex-wrap: wrap;
     justify-content: flex-start;
   }

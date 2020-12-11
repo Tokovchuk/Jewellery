@@ -83,65 +83,99 @@
   <section class="catalog">
     <div class="catalog__wrapper container">
       <aside class="catalog__filter filter">
+        <button type="button" class="filter__open" aria-label="Open filter">Filter</button>
+
         <form class="filter__form">
+          <button type="button" class="filter__close" aria-label="Close filter">
+            <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
           <fieldset>
             <h3>
-              <span>Product</span>
-              <button type="button" class="filter__tick">
-                <svg width="17" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="./img/sprite.svg#icon-tick-down"></use>
-                </svg>
-              </button>
+              Product
+              <svg width="17" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#icon-tick-down"></use>
+              </svg>
             </h3>
             <div class="filter__product">
               <label>
-                <input type="checkbox">
+                <input type="checkbox" class="visually-hidden">
                 <span>Necklaces</span>
               </label>
               <label>
-                <input type="checkbox">
+                <input type="checkbox" class="visually-hidden">
                 <span>Chokers</span>
               </label>
               <label>
-                <input type="checkbox">
+                <input type="checkbox" class="visually-hidden">
                 <span>Rings</span>
               </label>
               <label>
-                <input type="checkbox">
+                <input type="checkbox" class="visually-hidden">
                 <span>Earrings</span>
               </label>
             </div>
           </fieldset>
           <fieldset>
             <h3>
-              <span>Material</span>
-              <button type="button" class="filter__tick">
-                <svg width="17" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="./img/sprite.svg#icon-tick-down"></use>
-                </svg>
-              </button>
+              Material
+              <svg width="17" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#icon-tick-down"></use>
+              </svg>
             </h3>
+            <div class="filter__product">
+              <label>
+                <input type="checkbox" class="visually-hidden">
+                <span>Gold</span>
+              </label>
+              <label>
+                <input type="checkbox" class="visually-hidden">
+                <span>Silver</span>
+              </label>
+            </div>
           </fieldset>
           <fieldset>
             <h3>
-              <span>Collection</span>
-              <button type="button" class="filter__tick">
-                <svg width="17" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="./img/sprite.svg#icon-tick-down"></use>
-                </svg>
-              </button>
+              Collection
+              <svg width="17" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#icon-tick-down"></use>
+              </svg>
             </h3>
+            <div class="filter__product">
+              <label>
+                <input type="checkbox" class="visually-hidden">
+                <span>Pink flamingo</span>
+              </label>
+              <label>
+                <input type="checkbox" class="visually-hidden">
+                <span>Dreams</span>
+              </label>
+            </div>
           </fieldset>
           <fieldset>
             <h3>
-              <span>Price</span>
-              <button type="button" class="filter__tick">
-                <svg width="17" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="./img/sprite.svg#icon-tick-down"></use>
-                </svg>
-              </button>
+              Price
+              <svg width="17" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#icon-tick-down"></use>
+              </svg>
             </h3>
+            <div class="filter__range range">
+              <div class="range__all">
+                <div class="range__select"></div>
+              </div>
+              <div class="range__value range__value--min">
+                <div class="range__circle"></div>
+                <span>$ 55</span>
+              </div>
+              <div class="range__value range__value--max">
+                <div class="range__circle"></div>
+                <span>$ 155</span>
+              </div>
+            </div>
           </fieldset>
+          <button type="submit">Apply</button>
+          <button type="reset">Clear All</button>
         </form>
       </aside>
       <div class="catalog__cards cards">
@@ -273,44 +307,42 @@
         </li>
       </ul>
     </div>
-    <div class="footer__socials socials">
-      <ul class="socials__list">
-        <li class="socials__item">
-          <a href="#">
-            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="./img/sprite.svg#icon-facebook"></use>
-            </svg>
-            <span>Facebook</span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="#">
-            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="./img/sprite.svg#icon-instagram"></use>
-            </svg>
-            <span>Instagram</span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="#">
-            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="./img/sprite.svg#icon-pinterest"></use>
-            </svg>
-            <span>Pinterest</span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="#">
-            <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="./img/sprite.svg#icon-twitter"></use>
-            </svg>
-            <span>Twitter</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <ul class="footer_socials socials">
+      <li class="socials__item">
+        <a href="#">
+          <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#icon-facebook"></use>
+          </svg>
+          <span>Facebook</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="#">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#icon-instagram"></use>
+          </svg>
+          <span>Instagram</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="#">
+          <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#icon-pinterest"></use>
+          </svg>
+          <span>Pinterest</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="#">
+          <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+          </svg>
+          <span>Twitter</span>
+        </a>
+      </li>
+    </ul>
   </div>
 </footer>
-<script src="js/main.js"></script>
+<script src="js/main-catalog.js"></script>
 </body>
 </html>
