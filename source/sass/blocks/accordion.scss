@@ -1,8 +1,8 @@
 .accordion__item {
-  padding-top: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-  padding-left: 38px;
+  padding-top: 43px;
+  padding-right: 48px;
+  padding-bottom: 43px;
+  padding-left: 42px;
   border: 1px solid $pink;
   border-bottom: none;
 
@@ -22,6 +22,7 @@
 .accordion__trigger {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .accordion__trigger h3 {
@@ -43,7 +44,10 @@
 }
 
 .accordion__content p {
-  padding-right: 20px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding-left: 8px;
+  padding-right: 371px;
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -51,20 +55,50 @@
   line-height: 21px;
 }
 
+@media (max-width: $tablet-max) {
+  .accordion__item {
+    padding-left: 49px;
+    padding-bottom: 44px;
+  }
+
+  .accordion__content p {
+    margin-top: 27px;
+    padding: 0;
+    padding-right: 30px;
+  }
+
+  .accordion__trigger svg {
+    width: 23px;
+    height: 12px;
+  }
+}
+
 @media (max-width: $mobile-max) {
   .accordion__item {
-    padding-top: 22px;
+    padding-top: 18px;
     padding-right: 25px;
-    padding-bottom: 22px;
+    padding-bottom: 18px;
     padding-left: 25px;
   }
 
+  .accordion__trigger {
+    align-items: baseline;
+  }
+
   .accordion__trigger h3 {
+    padding-right: 43px;
     font-size: 16px;
     line-height: 22px;
   }
 
+  .accordion__trigger svg {
+    width: 20px;
+    height: 10px;
+  }
+
   .accordion__content p {
+    margin-top: 14px;
+    padding-right: 31px;
     font-size: 14px;
     line-height: 20px;
   }

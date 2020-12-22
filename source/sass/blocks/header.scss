@@ -5,6 +5,7 @@
 
 .header__logo {
   position: absolute;
+  top: 41px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -24,17 +25,22 @@
 }
 
 .header__menu {
-  padding-top: 40px;
-  padding-bottom: 60px;
+  padding-top: 53px;
+  padding-bottom: 49px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
 .header__nav {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  padding-left: 10px;
   border-top: 1px solid $light-grey;
+
+  &--card {
+    border-bottom: 1px solid $light-grey;
+  }
 }
 
 .header__user {
@@ -52,9 +58,18 @@
   &:last-child {
     margin-right: 0;
   }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .header__form {
+  margin-bottom: 0;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -89,7 +104,6 @@
 
 @media (max-width: $tablet-max) {
   .header {
-    padding-top: 30px;
     background-color: $pink;
     z-index: 10;
 
@@ -186,7 +200,8 @@
   }
 
   .header__menu {
-    padding-bottom: 55px;
+    padding-top: 28px;
+    padding-bottom: 28px;
     flex-wrap: wrap;
     align-items: center;
   }
@@ -217,6 +232,7 @@
   }
 
   .header__menu {
-    padding-bottom: 69px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 }

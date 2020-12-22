@@ -19,6 +19,14 @@
   &:last-child {
     margin-right: 0;
   }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: $tablet-max) {

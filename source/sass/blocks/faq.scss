@@ -1,17 +1,36 @@
 .faq {
-  padding-top: 70px;
+  padding-top: 60px;
   padding-bottom: 60px;
   width: 100%;
-  max-width: 970px;
+  max-width: 1030px;
 }
 
 .faq h2 {
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 48px;
   font-family: "Cormorant Garamond", "Georgia", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
   line-height: 44px;
+  letter-spacing: 0.03em;
   text-align: center;
+}
+
+@media (max-width: $tablet-max) {
+  .faq {
+    padding-top: 19px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .faq {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .faq h2 {
+    margin-bottom: 28px;
+  }
 }

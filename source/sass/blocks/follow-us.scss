@@ -4,18 +4,24 @@
   text-align: center;
 }
 
+.follow-us picture {
+  display: flex;
+}
+
 .follow-us h2 {
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   font-family: "Cormorant Garamond", "Georgia", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
+  letter-spacing: 0.03em;
   line-height: 44px;
 }
 
 .follow-us a {
   margin-bottom: 60px;
+  padding-bottom: 4px;
   display: inline-block;
   vertical-align: middle;
   font-family: "Poppins", "Arial", sans-serif;
@@ -24,6 +30,14 @@
   font-size: 16px;
   line-height: 21px;
   border-bottom: 1px solid $pink;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .follow-us__images {
@@ -45,6 +59,7 @@
   width: 20%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .follow-us__wrapper img:first-child {
@@ -60,7 +75,7 @@
   align-items: flex-start;
 }
 
-.follow-us__container img {
+.follow-us__container picture {
   max-width: 45.42%;
 
   &:first-child,
@@ -77,25 +92,48 @@
   }
 }
 
+@media (max-width: $tablet-max) {
+  .follow-us {
+    padding-top: 24px;
+    padding-bottom: 79px;
+  }
+}
+
 @media (max-width: $mobile-max) {
   .follow-us {
-    margin-bottom: 70px;
+    padding-top: 31px;
+    padding-bottom: 71px;
+  }
+
+  .follow-us a {
+    margin-bottom: 46px;
   }
 
   .follow-us__images {
     flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch;
+  }
+
+  .follow-us__images img {
+    width: 100%;
+  }
+
+  .follow-us__images picture {
+    width: 100%;
   }
 
   .follow-us__wrapper {
     margin-right: 5.17%;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
     width: 44.83%;
   }
 
+  .follow-us__wrapper picture:first-child {
+    margin-bottom: 15px;
+  }
+
   .follow-us__soloImg {
-    margin-bottom: 8px;
+    margin-bottom: 0;
     padding-bottom: 5%;
     width: 50%;
   }
@@ -105,6 +143,10 @@
     min-height: 226px;
   }
 
+  .follow-us__soloImg picture {
+    height: 100%;
+  }
+
   .follow-us__container {
     margin: 0;
     width: 100%;
@@ -112,7 +154,7 @@
     justify-content: flex-start;
   }
 
-  .follow-us__container img {
+  .follow-us__container picture {
     &:first-child {
       margin: 0;
       order: 2;

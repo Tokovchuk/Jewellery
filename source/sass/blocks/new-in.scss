@@ -1,12 +1,12 @@
 .new-in {
   padding-bottom: 60px;
-  padding-top: 130px;
+  padding-top: 120px;
   text-align: center;
 }
 
 .new-in h2 {
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 24px;
   font-family: "Cormorant Garamond", "Georgia", serif;
   font-style: normal;
   font-weight: bold;
@@ -14,15 +14,55 @@
   line-height: 44px;
 }
 
-.new-in a {
+.new-in > a {
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
   border-bottom: 1px solid $pink;
+  display: inline-block;
+  vertical-align: middle;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .new-in__slider {
   margin-top: -50px;
+}
+
+@media (max-width: $tablet-max) {
+  .new-in {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+
+  .new-in h2 {
+    margin-bottom: 18px;
+  }
+
+  .new-in > a {
+    padding-bottom: 5px;
+  }
+
+  .new-in__slider {
+    margin-top: -47px;
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .new-in {
+    padding-top: 61px;
+    padding-bottom: 30px;
+  }
+
+  .new-in__slider {
+    margin-top: -43px;
+  }
 }

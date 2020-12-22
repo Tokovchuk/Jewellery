@@ -1,0 +1,164 @@
+.modal-cart {
+  padding-top: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-cart__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $black;
+  opacity: 0.25;
+}
+
+.modal-cart__body {
+  padding-bottom: 55px;
+  padding-top: 55px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.modal-cart__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  &:hover {
+    transform: rotate(360deg);
+    transition: 1s;
+  }
+}
+
+.modal-cart__close svg {
+  fill: $black;
+}
+
+.modal-cart__body h1 {
+  margin-bottom: 55px;
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 34px;
+}
+
+.modal-cart__products {
+  padding-bottom: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
+  display: flex;
+  border-bottom: 1px solid $light-grey;
+}
+
+.modal-cart__products img {
+  margin-right: 20px;
+}
+
+.modal-cart__description {
+  text-align: left;
+}
+
+.modal-cart__description h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.modal-cart__description span {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.modal-cart__counter {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-cart__counter button {
+  padding: 0;
+  display: flex;
+  width: 14px;
+  height: 14px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.modal-cart__counter span {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.modal-cart__subtotal {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-cart__subtotal span {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+
+  &:last-child {
+    font-weight: 500;
+    text-align: right;
+  }
+}
+
+.modal-cart__buttons {
+  padding-left: 35px;
+  padding-right: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-cart__buttons a {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  background-color: $pink;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  width: calc((100% - 30px) / 2);
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  border: 1px solid $pink;
+
+  &:hover {
+    background-color: transparent;
+    color: $black;
+  }
+}

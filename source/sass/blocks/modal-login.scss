@@ -1,0 +1,141 @@
+.modal-login {
+  padding-top: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-login__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $black;
+  opacity: 0.25;
+}
+
+.modal-login__body {
+  padding-bottom: 60px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 430px;
+  background-color: $bg-article;
+  text-align: center;
+}
+
+.modal-login__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  &:hover {
+    transform: rotate(360deg);
+    transition: 1s;
+  }
+}
+
+.modal-login__close svg {
+  fill: $black;
+}
+
+.modal-login__body h1 {
+  margin-top: 60px;
+  margin-bottom: 45px;
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 44px;
+}
+
+.modal-login__form {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.modal-login__form input {
+  margin-bottom: 30px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  width: 100%;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $black;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $black;
+
+  &:last-of-type {
+    margin-bottom: 10px;
+  }
+}
+
+.modal-login__form a {
+  margin-bottom: 50px;
+  text-align: right;
+  display: block;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: $grey;
+}
+
+.modal-login__form button {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  width: 100%;
+  background-color: $pink;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  border: 1px solid $pink;
+
+  &:hover {
+    background-color: transparent;
+    color: $black;
+  }
+}
+
+.modal-login__body p {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $grey;
+}
+
+.modal-login__body a:last-of-type {
+  color: $black;
+}
+
+@media (max-width: $mobile-max) {
+  .modal-login {
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .modal-login__body {
+    padding-bottom: 45px;
+  }
+
+  .modal-login__form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

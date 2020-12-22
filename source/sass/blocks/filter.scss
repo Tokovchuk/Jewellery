@@ -86,17 +86,18 @@
   padding-bottom: 28px;
   text-align: center;
   border: 1px solid $pink;
-  background-color: #ffffff;
+  background-color: $pink;
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-  color: $black;
+  color: #ffffff;
+  cursor: pointer;
 
   &:hover {
-    color: #ffffff;
-    background-color: $pink;
+    color: $black;
+    background-color: #ffffff;
   }
 
   &:last-child {
@@ -157,7 +158,7 @@
 
   .filter__form button {
     margin-right: 40px;
-    margin-left: 21px
+    margin-left: 21px;
   }
 
   .filter__form .filter__close {

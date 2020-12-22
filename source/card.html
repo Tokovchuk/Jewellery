@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="website about jewelry">
+  <meta name="keywords" content="jewelry, jewel, valuables, treasure, gem">
+  <title>Jewellery</title>
+  <link rel="preload" href="./fonts/Poppins-Medium.woff" as="font">
+  <link rel="preload" href="./fonts/Poppins-Medium.woff2" as="font">
+  <link rel="preload" href="./fonts/CormorantGaramond-Bold.woff" as="font">
+  <link rel="preload" href="./fonts/CormorantGaramond-Bold.woff2" as="font">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+<header class="header">
+  <div class="header__menu container">
+    <button class="header__burger header__burger--nojs" type="button">
+      <svg class="svg" width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="./img/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <form class="header__form">
+      <input type="text" placeholder="Type here for search" aria-label="Type here gor search">
+      <button type="submit">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./img/sprite.svg#icon-search"></use>
+        </svg>
+      </button>
+    </form>
+    <a href="./index.html" class="header__logo header__logo--nojs">
+      <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="./img/sprite.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <div class="header__user">
+      <a href="#" class="header__login">Login</a>
+      <a href="#" class="header__cart">
+        <span>Cart <span>0</span></span>
+        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./img/sprite.svg#icon-cart"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <nav class="header__nav header__nav--nojs header__nav--card main-nav">
+    <ul class="main-nav__list">
+      <li class="main-nav__item">
+        <a href="#">What’s new</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#">Chokers</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#">Necklaces</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#">Rings</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#">Earrings</a>
+      </li>
+    </ul>
+    <ul class="main-nav__list main-nav__list--addon">
+      <li class="main-nav__item main-nav__item--addon">
+        <a href="#">About CH</a>
+      </li>
+      <li class="main-nav__item main-nav__item--addon">
+        <a href="#">Stores & Hours</a>
+      </li>
+      <li class="main-nav__item main-nav__item--addon">
+        <a href="#">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="product container">
+    <div class="product__images image-box">
+      <div class="image-box__wrapper">
+        <div class="image-box__small">
+          <picture>
+            <source type="image/webp" srcset="./img/ProductCard/card-small-1.webp 1x, ./img/ProductCard/card-small-1@2x.webp 2x">
+            <!-- 1x: 100x125; 2x: 200x250 -->
+            <img src="./img/ProductCard/card-small-1.jpg" srcset="./img/ProductCard/card-small-1@2x.jpg 2x" width="100" height="125" alt="jewellery">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="./img/ProductCard/card-small-2.webp 1x, ./img/ProductCard/card-small-2@2x.webp 2x">
+            <!-- 1x: 100x125; 2x: 200x250 -->
+            <img src="./img/ProductCard/card-small-2.jpg" srcset="./img/ProductCard/card-small-2@2x.jpg 2x" width="100" height="125" alt="jewellery">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="./img/ProductCard/card-small-3.webp 1x, ./img/ProductCard/card-small-3@2x.webp 2x">
+            <!-- 1x: 100x125; 2x: 200x250 -->
+            <img src="./img/ProductCard/card-small-3.jpg" srcset="./img/ProductCard/card-small-3@2x.jpg 2x" width="100" height="125" alt="jewellery">
+          </picture>
+        </div>
+      </div>
+      <div class="image-box__big">
+        <picture>
+          <source type="image/webp" srcset="./img/ProductCard/card-big.webp 1x, ./img/ProductCard/card-big@2x.webp 2x">
+          <!-- 1x: 470x435; 2x: 940x870 -->
+          <img src="./img/ProductCard/card-big.jpg" srcset="./img/ProductCard/card-big@2x.jpg 2x" width="470" height="435" alt="jewellery">
+        </picture>
+      </div>
+    </div>
+    <div class="product__description">
+      <h2>Gold Necklace</h2>
+      <span>$ 115</span>
+      <div class="product__info info">
+        <div class="info__titles">
+          <a href="#description" class="info__link">Description</a>
+          <a href="#info" class="info__link">Additional info</a>
+        </div>
+        <div class="info__description">
+          <p class="info__item" id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+            adipisci at, atque consectetur cumque, dolorum eaque enim facere ipsum laudantium libero magni nemo, odit
+            possimus quidem totam vel veritatis vero? Dolorem esse expedita facilis fuga fugiat, harum illo inventore
+            neque perferendis quod recusandae repellendus, vitae voluptatum? Ab architecto neque ullam?</p>
+          <table class="info__table info__item" id="info">
+            <tr>
+              <td>Metal type</td>
+              <td>Gold 585</td>
+            </tr>
+            <tr>
+              <td>Stone</td>
+              <td>Turquoise</td>
+            </tr>
+            <tr>
+              <td>Size</td>
+              <td>18” / 20”</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <a class="product__button" href="cart.html">Add to cart</a>
+      <div class="product__features">
+        <span>14 Day Returns</span>
+        <span>2-Year Warranty</span>
+        <span>Free Shipping</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="new-in container">
+    <h2>You May Also Like</h2>
+    <a href="catalog.html">Shop Now</a>
+    <div class="new-in__slider slider">
+      <div class="slider__buttons slider__buttons--hide">
+        <button class="slider__btn" type="button" id="btn-prev">
+          <svg width="30" height="11" viewBox="0 0 30 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button class="slider__btn" type="button" id="btn-next">
+          <svg width="30" height="11" viewBox="0 0 30 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="slider__track">
+        <a href="card.html" class="slider__item">
+          <picture>
+            <source type="image/webp" srcset="./img/Index/new-in-1.webp 1x, ./img/Index/new-in-1@2x.webp 2x">
+            <!-- 1x: 270x284; 2x: 540x568 -->
+            <img src="./img/Index/new-in-1.jpg" srcset="./img/Index/new-in-1@2x.jpg 2x" width="270" height="284"
+                 alt="Necklace with amethyst">
+          </picture>
+          <h3>Necklace with amethyst</h3>
+          <span>$ 145</span>
+        </a>
+        <a href="card.html" class="slider__item">
+          <picture>
+            <source type="image/webp" srcset="./img/Index/new-in-2.webp 1x, ./img/Index/new-in-2@2x.webp 2x">
+            <!-- 1x: 270x284; 2x: 540x568 -->
+            <img src="./img/Index/new-in-2.jpg" srcset="./img/Index/new-in-2@2x.jpg 2x" width="270" height="284"
+                 alt="Layered сhoker">
+          </picture>
+          <h3>Layered сhoker</h3>
+          <span>$ 115</span>
+        </a>
+        <a href="card.html" class="slider__item">
+          <picture>
+            <source type="image/webp" srcset="./img/Index/new-in-3.webp 1x, ./img/Index/new-in-3@2x.webp 2x">
+            <!-- 1x: 270x284; 2x: 540x568 -->
+            <img src="./img/Index/new-in-3.jpg" srcset="./img/Index/new-in-3@2x.jpg 2x" width="270" height="284"
+                 alt="Gold chain">
+          </picture>
+          <h3>Gold chain</h3>
+          <span>$ 215</span>
+        </a>
+        <a href="card.html" class="slider__item">
+          <picture>
+            <source type="image/webp" srcset="./img/Index/new-in-4.webp 1x, ./img/Index/new-in-4@2x.webp 2x">
+            <!-- 1x: 270x284; 2x: 540x568 -->
+            <img src="./img/Index/new-in-4.jpg" srcset="./img/Index/new-in-4@2x.jpg 2x" width="270" height="284"
+                 alt="Galaxy earrings">
+          </picture>
+          <h3>Galaxy earrings</h3>
+          <span>$ 95</span>
+        </a>
+        <a href="card.html" class="slider__item">
+          <picture>
+            <source type="image/webp" srcset="./img/Index/new-in-1.webp 1x, ./img/Index/new-in-1@2x.webp 2x">
+            <!-- 1x: 270x284; 2x: 540x568 -->
+            <img src="./img/Index/new-in-1.jpg" srcset="./img/Index/new-in-1@2x.jpg 2x" width="270" height="284"
+                 alt="Necklace with amethyst">
+          </picture>
+          <h3>Necklace with amethyst</h3>
+          <span>$ 145</span>
+        </a>
+        <a href="card.html" class="slider__item">
+          <picture>
+            <source type="image/webp" srcset="./img/Index/new-in-1.webp 1x, ./img/Index/new-in-1@2x.webp 2x">
+            <!-- 1x: 270x284; 2x: 540x568 -->
+            <img src="./img/Index/new-in-1.jpg" srcset="./img/Index/new-in-1@2x.jpg 2x" width="270" height="284"
+                 alt="Necklace with amethyst">
+          </picture>
+          <h3>Necklace with amethyst</h3>
+          <span>$ 145</span>
+        </a>
+        <a href="card.html" class="slider__item">
+          <picture>
+            <source type="image/webp" srcset="./img/Index/new-in-4.webp 1x, ./img/Index/new-in-4@2x.webp 2x">
+            <!-- 1x: 270x284; 2x: 540x568 -->
+            <img src="./img/Index/new-in-4.jpg" srcset="./img/Index/new-in-4@2x.jpg 2x" width="270" height="284"
+                 alt="Galaxy earrings">
+          </picture>
+          <h3>Galaxy earrings</h3>
+          <span>$ 95</span>
+        </a>
+        <a href="card.html" class="slider__item">
+          <picture>
+            <source type="image/webp" srcset="./img/Index/new-in-4.webp 1x, ./img/Index/new-in-4@2x.webp 2x">
+            <!-- 1x: 270x284; 2x: 540x568 -->
+            <img src="./img/Index/new-in-4.jpg" srcset="./img/Index/new-in-4@2x.jpg 2x" width="270" height="284"
+                 alt="Galaxy earrings">
+          </picture>
+          <h3>Galaxy earrings</h3>
+          <span>$ 95</span>
+        </a>
+        <a href="card.html" class="slider__item">
+          <picture>
+            <source type="image/webp" srcset="./img/Index/new-in-4.webp 1x, ./img/Index/new-in-4@2x.webp 2x">
+            <!-- 1x: 270x284; 2x: 540x568 -->
+            <img src="./img/Index/new-in-4.jpg" srcset="./img/Index/new-in-4@2x.jpg 2x" width="270" height="284"
+                 alt="Galaxy earrings">
+          </picture>
+          <h3>Galaxy earrings</h3>
+          <span>$ 95</span>
+        </a>
+        <a href="card.html" class="slider__item">
+          <picture>
+            <source type="image/webp" srcset="./img/Index/new-in-3.webp 1x, ./img/Index/new-in-3@2x.webp 2x">
+            <!-- 1x: 270x284; 2x: 540x568 -->
+            <img src="./img/Index/new-in-3.jpg" srcset="./img/Index/new-in-3@2x.jpg 2x" width="270" height="284"
+                 alt="Gold chain">
+          </picture>
+          <h3>Gold chain</h3>
+          <span>$ 215</span>
+        </a>
+        <a href="card.html" class="slider__item">
+          <picture>
+            <source type="image/webp" srcset="./img/Index/new-in-3.webp 1x, ./img/Index/new-in-3@2x.webp 2x">
+            <!-- 1x: 270x284; 2x: 540x568 -->
+            <img src="./img/Index/new-in-3.jpg" srcset="./img/Index/new-in-3@2x.jpg 2x" width="270" height="284"
+                 alt="Gold chain">
+          </picture>
+          <h3>Gold chain</h3>
+          <span>$ 215</span>
+        </a>
+        <a href="card.html" class="slider__item">
+          <picture>
+            <source type="image/webp" srcset="./img/Index/new-in-3.webp 1x, ./img/Index/new-in-3@2x.webp 2x">
+            <!-- 1x: 270x284; 2x: 540x568 -->
+            <img src="./img/Index/new-in-3.jpg" srcset="./img/Index/new-in-3@2x.jpg 2x" width="270" height="284"
+                 alt="Gold chain">
+          </picture>
+          <h3>Gold chain</h3>
+          <span>$ 215</span>
+        </a>
+      </div>
+      <div class="slider__pages">
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__wrapper container">
+    <div class="footer__subscribe">
+      <h2>The good stuff in&nbsp;your inbox </h2>
+      <p>News and updates from CH. No&nbsp;spam, we promise.</p>
+      <form class="footer__form">
+        <input type="email" maxlength="35" aria-label="Insert your e-mail" placeholder="Your E-mail">
+        <button type="submit">
+          <span>Sign Up</span>
+          <svg width="30" height="11" viewBox="0 0 30 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#icon-longArrow-right"></use>
+          </svg>
+        </button>
+      </form>
+
+    </div>
+    <div class="footer__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#">Ordering & Payment</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Terms & Conditions</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Returns & Exchanges</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Delivery</a>
+        </li>
+      </ul>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#">About CH</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Stores & Hours</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Jobs</a>
+        </li>
+        <li class="nav__item">
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <ul class="footer_socials socials">
+      <li class="socials__item">
+        <a href="#">
+          <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#icon-facebook"></use>
+          </svg>
+          <span>Facebook</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="#">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#icon-instagram"></use>
+          </svg>
+          <span>Instagram</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="#">
+          <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#icon-pinterest"></use>
+          </svg>
+          <span>Pinterest</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a href="#">
+          <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+          </svg>
+          <span>Twitter</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Modals -->
+<div class="modal-login visually-hidden">
+  <div class="modal-login__body">
+    <a class="modal-login__close" href="./index.html">
+      <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="./img/sprite.svg#icon-close"></use>
+      </svg>
+    </a>
+    <img src="./img/Modal/login.jpg" width="430" height="138" alt="jewellery">
+    <h1>Log In</h1>
+    <form class="modal-login__form">
+      <input type="email" id="email" placeholder="Your E-mail" aria-label="Your E-mail" required>
+      <input type="password" id="password" placeholder="Password" aria-label="Password" required>
+      <a href="#">Forgot your password?</a>
+      <button id="login-button" type="submit">Log In</button>
+    </form>
+    <p>Don't have account? <a href="#">Sign up</a></p>
+  </div>
+</div>
+
+<div class="modal-cart visually-hidden">
+  <div class="modal-cart__overlay"></div>
+  <div class="modal-cart__body">
+    <a class="modal-cart__close" href="./index.html">
+      <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="./img/sprite.svg#icon-close"></use>
+      </svg>
+    </a>
+    <h1>The item was added to your cart</h1>
+    <div class="modal-cart__products">
+      <img src="./img/Modal/cart.jpg" width="84" height="79" alt="Gold Necklace">
+      <div class="modal-cart__description">
+        <h2>Gold Necklace</h2>
+        <span>$ 115</span>
+      </div>
+      <div class="modal-cart__counter">
+        <button>
+          <svg width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#icon-plus"></use>
+          </svg>
+        </button>
+        <span>1</span>
+        <button>
+          <svg width="14" height="2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#icon-minus"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="modal-cart__subtotal">
+      <span>You have 1 item in the cart</span>
+      <span>Cart subtotal: $ 115</span>
+    </div>
+    <div class="modal-cart__buttons">
+      <a href="./catalog.html">Continue shopping</a>
+      <a href="#" id="checkout">Checkout</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
