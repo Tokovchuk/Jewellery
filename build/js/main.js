@@ -17,7 +17,6 @@
 
   const replaceHeader = () => {
     headerForm.cloneNode(true);
-    headerForm.style.margin = '0 0 55px 0';
     mainNav.insertBefore(headerForm, mainNav.firstChild);
     login.cloneNode(true);
     login.style.display = 'block';

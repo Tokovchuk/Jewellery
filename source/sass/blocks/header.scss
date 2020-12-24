@@ -8,6 +8,19 @@
   top: 41px;
   left: 50%;
   transform: translateX(-50%);
+
+  &--t30 {
+    top: 30px;
+  }
+
+  &:hover {
+    transform: translateX(-50%) scale(1.1);
+    transition: 0.2s;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .header__logo svg {
@@ -66,6 +79,14 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.header__login {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .header__form {
@@ -167,6 +188,7 @@
 
   .header__form {
     margin-top: 55px;
+    margin-bottom: 46px;
     position: relative;
     order: 10;
     width: 100%;
@@ -207,12 +229,13 @@
   }
 
   .header__nav {
-    padding-top: 0;
+    padding-top: 8px;
     padding-left: 45px;
     padding-right: 45px;
+    padding-bottom: 74px;
     border: none;
     position: absolute;
-    top: 143px;
+    top: 126px;
     width: 100%;
 
     &--close {
@@ -234,5 +257,17 @@
   .header__menu {
     padding-top: 18px;
     padding-bottom: 18px;
+  }
+
+  .header__nav {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 9px;
+    padding-bottom: 45px;
+    top: 92px;
+  }
+
+  .header__form {
+    margin-bottom: 36px;
   }
 }

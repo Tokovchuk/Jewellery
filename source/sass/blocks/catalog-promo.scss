@@ -1,6 +1,6 @@
 .catalog-promo {
-  padding-top: 102px;
-  padding-bottom: 102px;
+  padding-top: 64px;
+  padding-bottom: 95px;
   background-color: #776255;
   background-image: url("../../img/Catalog/catalog-bg.jpg");
   background-repeat: no-repeat;
@@ -14,6 +14,7 @@
 }
 
 .catalog-promo h2 {
+  margin-bottom: 1px;
   font-family: "Cormorant Garamond", "Georgia", serif;
   font-style: normal;
   font-weight: bold;
@@ -31,4 +32,13 @@
   font-size: 22px;
   line-height: 29px;
   color: #ffffff;
+}
+
+@media (max-width: $mobile-max) {
+  .catalog-promo {
+    padding-top: 51px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 79px;
+  }
 }

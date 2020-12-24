@@ -9,17 +9,17 @@
 }
 
 .product__description h2 {
-  margin: 0;
-  margin-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 20px;
   font-family: "Cormorant Garamond", "Georgia", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
-  line-height: 34px;
+  line-height: 24px;
 }
 
 .product__description > span {
-  margin-bottom: 50px;
+  margin-bottom: 38px;
   display: block;
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
@@ -49,14 +49,15 @@
 }
 
 .product__info {
-  margin-bottom: 30px;
+  margin-bottom: 52px;
 }
 
 .product__button {
-  margin-bottom: 20px;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  margin-bottom: 17px;
+  padding-top: 25px;
+  padding-bottom: 23px;
   text-align: center;
+  letter-spacing: 0.06em;
   width: 100%;
   background-color: $pink;
   color: #ffffff;
@@ -71,6 +72,7 @@
 
 @media (max-width: $tablet-max) {
   .product {
+    padding-top: 31px;
     justify-content: space-between;
   }
 
@@ -87,10 +89,32 @@
 
 @media (max-width: $mobile-max) {
   .product {
+    padding-top: 0;
     flex-direction: column;
   }
 
   .product__description {
     width: 100%;
+  }
+
+  .product__description > span {
+    margin-bottom: 29px;
+  }
+
+  .product__info {
+    margin-bottom: 42px;
+  }
+
+  .product__button {
+    margin-bottom: 13px;
+  }
+
+  .product__features {
+    padding-left: 3px;
+    padding-right: 5px;
+  }
+
+  .product__features span {
+    max-width: 60px;
   }
 }

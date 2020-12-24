@@ -1,9 +1,9 @@
 .info__titles {
-  margin-bottom: 40px;
+  margin-bottom: 18px;
 }
 
 .info__link {
-  margin-right: 35px;
+  margin-right: 31px;
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -22,6 +22,11 @@
 
 .info__item {
   display: none;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
 
   &--active {
     display: block;
@@ -44,8 +49,8 @@
 }
 
 .info__table td {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 13px;
+  padding-bottom: 8px;
   min-width: 50%;
   text-align: left;
   border-bottom: 1px solid $light-grey;
@@ -59,12 +64,4 @@
     text-align: right;
     font-weight: 400;
   }
-}
-
-.info__item {
-  font-family: "Poppins", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
 }

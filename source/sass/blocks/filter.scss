@@ -11,17 +11,21 @@
 
 .filter__form fieldset {
   margin: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 23px;
+  padding-bottom: 23px;
   border: 1px solid $pink;
   border-bottom: none;
 
   &:last-of-type {
-    margin: 0 0 35px;
+    margin-bottom: 35px;
     border-bottom: 1px solid $pink;
   }
 }
 
 .filter__form h3 {
-  margin-top: 30px;
+  margin: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -33,12 +37,27 @@
   color: $black;
 }
 
+.filter__form svg {
+  margin-top: 5px;
+}
+
 .filter__product {
+  margin-top: 23px;
+  padding-left: 10px;
+  padding-bottom: 4px;
   display: none;
 }
 
+.filter__product label {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .filter__product span {
-  padding-left: 30px;
+  padding-left: 26px;
   position: relative;
   font-family: "Poppins", "Arial", sans-serif;
   font-style: normal;
@@ -53,7 +72,7 @@
     height: 15px;
     border: 1px solid $pink;
     position: absolute;
-    top: 0;
+    top: 3px;
     left: 0;
   }
 }
@@ -82,8 +101,8 @@
 
 .filter__form button {
   margin-bottom: 25px;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 23px;
+  padding-bottom: 22px;
   text-align: center;
   border: 1px solid $pink;
   background-color: $pink;
@@ -147,13 +166,47 @@
   }
 
   .filter__form fieldset {
+    padding-top: 34px;
+    padding-left: 22px;
     padding-right: 40px;
+    padding-bottom: 34px;
     border-right: none;
     border-left: none;
 
     &:first-of-type {
       border-top: none;
     }
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+  }
+
+  .filter__form h3 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .filter__form label {
+    margin-bottom: 17px;
+  }
+
+  .filter__product span {
+    padding-left: 29px;
+    font-size: 16px;
+    line-height: 21px;
+
+    &::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      left: -1px;
+    }
+  }
+
+  .filter__form fieldset svg {
+    width: 23px;
+    height: 12px;
   }
 
   .filter__form button {
@@ -185,8 +238,8 @@
   }
 
   .filter__open {
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 27px;
+    padding-bottom: 23px;
     display: block;
     width: 100%;
     background-color: $pink;
@@ -196,5 +249,36 @@
     &--hide {
       display: none;
     }
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .filter {
+    padding-top: 39px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .filter__open {
+    margin-bottom: 40px;
+  }
+
+  .filter__form .filter__close {
+    right: 26px;
+  }
+
+  .filter__form fieldset {
+    padding-top: 24px;
+    padding-right: 19px;
+    padding-bottom: 24px;
+
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+  }
+
+  .filter__form button {
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
 }

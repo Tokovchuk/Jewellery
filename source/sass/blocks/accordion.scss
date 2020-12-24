@@ -81,12 +81,16 @@
     padding-left: 25px;
   }
 
+  .accordion__item:last-child h3 {
+    padding-right: 6px;
+  }
+
   .accordion__trigger {
     align-items: baseline;
   }
 
   .accordion__trigger h3 {
-    padding-right: 43px;
+    padding-right: 36px;
     font-size: 16px;
     line-height: 22px;
   }
@@ -94,6 +98,7 @@
   .accordion__trigger svg {
     width: 20px;
     height: 10px;
+    flex-shrink: 0;
   }
 
   .accordion__content p {

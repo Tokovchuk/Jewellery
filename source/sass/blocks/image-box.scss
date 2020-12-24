@@ -21,13 +21,21 @@
   justify-content: space-between;
 }
 
+.image-box__small picture {
+  max-height: 125px;
+}
+
+.image-box__small img {
+  max-height: 125px;
+}
+
 @media (max-width: $tablet-max) {
   .image-box {
     margin-right: 0;
     flex-direction: column-reverse;
     justify-content: flex-end;
     width: calc((100% - 40px) / 2);
-    max-height: 100%;
+    max-height: 429px;
   }
 
   .image-box__small {
@@ -36,18 +44,22 @@
     justify-content: space-between;
   }
 
-  .image-box__small picture {
+  .image-box__small img {
     min-width: 97px;
     min-height: 129px;
   }
 
-  .image-box__big {
+  .image-box__big picture {
     margin-bottom: 14px;
+    max-height: 286px;
   }
 
-  .image-box__big picture {
+  .image-box__big img {
+    margin-bottom: 14px;
     min-width: 319px;
-    min-height: 286px;
+    height: auto;
+    max-height: 286px;
+    object-fit: cover;
   }
 }
 
@@ -61,7 +73,13 @@
   .image-box__small picture {
     min-width: 100%;
     width: 100%;
-    max-height: 435px;
+    max-height: 260px;
+  }
+
+  .image-box__small img {
+    min-width: 100%;
+    width: 100%;
+    max-height: 260px;
     height: auto;
 
     &:first-child {
@@ -70,6 +88,7 @@
   }
 
   .image-box__wrapper {
+    margin-bottom: 50px;
     position: relative;
     height: auto;
     width: 100%;
@@ -81,7 +100,7 @@
   .image-box__wrapper span {
     position: absolute;
     left: 50%;
-    bottom: 15px;
+    bottom: 7px;
     transform: translateX(-50%);
     color: $black;
     font-family: "Poppins", "Arial", sans-serif;
@@ -89,6 +108,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
+    letter-spacing: 0.03em;
   }
 
   .image-box__big {

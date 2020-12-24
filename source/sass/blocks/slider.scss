@@ -46,6 +46,10 @@
   margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
+
+  &--product-card {
+    margin-bottom: 95px;
+  }
 }
 
 .slider__btn {
@@ -150,5 +154,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
+    letter-spacing: 0.1em;
   }
 }

@@ -1,6 +1,7 @@
 .range {
+  margin-top: 15px;
   padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 27px;
   position: relative;
 }
 
@@ -35,12 +36,72 @@
   align-items: center;
   position: absolute;
   top: 3px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
 
   &--min {
     left: 37px;
   }
 
   &--max {
-    left: 127px;
+    left: 137px;
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .range {
+    margin-top: 23px;
+    margin-left: 9px;
+    margin-right: 48px;
+    padding-bottom: 37px;
+  }
+
+  .range__circle {
+    margin-bottom: 6px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .range__value {
+    top: 2px;
+
+    &--min {
+      left: 38px;
+    }
+
+    &--max {
+      left: 210px;
+    }
+  }
+
+  .range__select {
+    width: 162px;
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .range {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .range__value {
+    top: 2px;
+
+    &--min {
+      left: 20px;
+    }
+
+    &--max {
+      left: 155px;
+    }
+  }
+
+  .range__select {
+    left: 40px;
+    width: 130px;
   }
 }
