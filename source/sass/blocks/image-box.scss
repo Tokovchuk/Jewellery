@@ -81,10 +81,7 @@
     width: 100%;
     max-height: 260px;
     height: auto;
-
-    &:first-child {
-      object-fit: cover;
-    }
+    object-fit: contain;
   }
 
   .image-box__wrapper {

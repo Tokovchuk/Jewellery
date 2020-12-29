@@ -16,8 +16,9 @@
     margin-right: 0;
   }
 
-  &:hover img {
-    transform: scale(1.1);
+  &:hover {
+    opacity: 0.75;
+    text-decoration: underline;
   }
 
   &:active {

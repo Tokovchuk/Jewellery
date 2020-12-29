@@ -33,6 +33,17 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
+  cursor: pointer;
+}
+
+.accordion__trigger button {
+  padding: 0;
+  border: none;
+  background: none;
+  width: 17px;
+  height: 10px;
+  display: flex;
+  cursor: pointer;
 }
 
 .accordion__item:last-child h3 {
@@ -67,6 +78,11 @@
     padding-right: 30px;
   }
 
+  .accordion__trigger button {
+    width: 23px;
+    height: 12px;
+  }
+
   .accordion__trigger svg {
     width: 23px;
     height: 12px;
@@ -95,10 +111,14 @@
     line-height: 22px;
   }
 
+  .accordion__trigger button {
+    width: 20px;
+    height: 10px;
+  }
+
   .accordion__trigger svg {
     width: 20px;
     height: 10px;
-    flex-shrink: 0;
   }
 
   .accordion__content p {

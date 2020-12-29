@@ -21,6 +21,7 @@
     login.cloneNode(true);
     login.style.display = 'block';
     mainNav.appendChild(login);
+    mainNav.style.height = `${document.documentElement.clientHeight}px`;
     headerSearch.removeAttribute('placeholder');
   };
 
@@ -35,6 +36,8 @@
       headerMenu.insertBefore(headerForm, logo);
       headerUser.prepend(login);
       headerSearch.setAttribute('placeholder', 'Type here for search');
+      mainNav.style.height = 'auto';
+      body.style.overflow = 'visible';
     }
   });
 
@@ -58,6 +61,11 @@
     headerNav.classList.toggle('header__nav--close');
     burger.classList.toggle('header__burger--close');
     cart.classList.toggle('header__cart--close');
+    if (body.style.overflow === 'hidden') {
+      body.style.overflow = 'visible';
+    } else {
+      body.style.overflow = 'hidden';
+    }
   });
 
   // FAQ Tabs
@@ -65,6 +73,7 @@
   const triggers = document.querySelectorAll('.accordion__item');
 
   triggers.forEach((item) => {
+    item.classList.remove('accordion__item--active');
     item.addEventListener('click', () => {
       item.classList.toggle('accordion__item--active');
     });
@@ -292,7 +301,7 @@
     });
   });
 
-  // Табы CART.HTML
+  // Табы PRODUCTCARD.HTML
 
   const link = document.querySelectorAll('.info__link');
   const card = document.querySelectorAll('.info__item');
@@ -320,7 +329,7 @@
     link[1].click();
   }
 
-  // Slider CART.HTML
+  // Slider PRODUCTCARD.HTML
 
   const firstImg = document.querySelector('.image-box__big picture');
   const imageBoxBig = document.querySelector('.image-box__big');
@@ -463,6 +472,7 @@
 
   if (filter !== null) {
     filterItems.forEach((item) => {
+      item.classList.remove('filter__active');
       item.addEventListener('click', () => {
         item.classList.toggle('filter__active');
       });

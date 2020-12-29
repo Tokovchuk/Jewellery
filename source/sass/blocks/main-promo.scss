@@ -2,7 +2,7 @@
   padding-top: 181px;
   padding-bottom: 186px;
   background-color: #776255;
-  background-image: url("../../img/Index/promo-bg.jpg");
+  background-image: url("../img/Index/promo-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -10,7 +10,7 @@
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../../img/Index/promo-bg@2x.jpg");
+    background-image: url("../img/Index/promo-bg@2x.jpg");
   }
 }
 

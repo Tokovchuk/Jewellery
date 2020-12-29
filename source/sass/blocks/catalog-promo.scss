@@ -2,14 +2,14 @@
   padding-top: 64px;
   padding-bottom: 95px;
   background-color: #776255;
-  background-image: url("../../img/Catalog/catalog-bg.jpg");
+  background-image: url("../img/Catalog/catalog-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   text-align: center;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../../img/Catalog/catalog-bg@2x.jpg");
+    background-image: url("../img/Catalog/catalog-bg@2x.jpg");
   }
 }
 

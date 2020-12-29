@@ -50,6 +50,7 @@
 
 .filter__product label {
   margin-bottom: 12px;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
@@ -65,19 +66,29 @@
   font-size: 14px;
   line-height: 18px;
   color: $black;
-
-  &::before {
-    content: "";
-    width: 15px;
-    height: 15px;
-    border: 1px solid $pink;
-    position: absolute;
-    top: 3px;
-    left: 0;
-  }
+  cursor: pointer;
 }
 
-.filter__product input:checked + span::before {
+.filter__product div {
+  width: 15px;
+  height: 15px;
+  border: 1px solid $pink;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  cursor: pointer;
+}
+
+.filter__product input:focus + div {
+  outline: 2px solid $black;
+}
+
+.filter__product input:checked + div {
+  background-color: $pink;
+}
+
+.filter__product input:checked:focus + div {
+  outline: 2px solid $black;
   background-color: $pink;
 }
 
@@ -95,11 +106,19 @@
   display: block;
 }
 
+.filter__btn {
+  padding: 0;
+  background: none;
+  border: none;
+  width: 17px;
+  height: 10px;
+}
+
 .filter__active svg {
   transform: scale(-1);
 }
 
-.filter__form button {
+.filter__form button:not([class]) {
   margin-bottom: 25px;
   padding-top: 23px;
   padding-bottom: 22px;
@@ -244,23 +263,33 @@
     width: 100%;
     background-color: $pink;
     color: #ffffff;
-    border: none;
+    cursor: pointer;
+    border: 1px solid $pink;
 
     &--hide {
       display: none;
+    }
+
+    &:hover {
+      color: $black;
+      background-color: #ffffff;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
 
 @media (max-width: $mobile-max) {
   .filter {
-    padding-top: 39px;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  .filter__open {
     margin-bottom: 40px;
+
+    &--fixed {
+      padding-top: 49px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
   }
 
   .filter__form .filter__close {

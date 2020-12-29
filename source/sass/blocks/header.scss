@@ -13,12 +13,12 @@
     top: 30px;
   }
 
-  &:hover {
-    transform: translateX(-50%) scale(1.1);
-    transition: 0.2s;
+  &:hover[href="./index.html"] {
+    opacity: 0.5;
+    cursor: pointer;
   }
 
-  &:active {
+  &:active[href="./index.html"] {
     opacity: 0.3;
   }
 }
@@ -73,7 +73,8 @@
   }
 
   &:hover {
-    transform: scale(1.1);
+    opacity: 0.5;
+    text-decoration: underline;
   }
 
   &:active {
@@ -87,6 +88,15 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
+
+  &:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .header__form {
@@ -180,7 +190,6 @@
   }
 
   .header__login {
-    display: none;
     font-size: 18px;
     line-height: 23px;
     color: #ffffff;
@@ -243,7 +252,7 @@
     }
 
     &--nojs {
-      position: relative;
+      position: static;
     }
   }
 }

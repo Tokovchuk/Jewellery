@@ -5,10 +5,6 @@
 .nav__list {
   @include clearlist;
   margin-right: 72px;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .nav__item {
@@ -24,7 +20,8 @@
   }
 
   &:hover {
-    transform: scale(1.1);
+    text-decoration: underline;
+    opacity: 0.75;
   }
 
   &:active {
